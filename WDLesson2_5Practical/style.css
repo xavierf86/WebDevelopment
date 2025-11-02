@@ -31,7 +31,7 @@ html{
                  apply some other type of styling.
 */
 #secondGallery img:hover{
-    filter:drop-shadow(100%);
+    filter:grayscale(100%);
 }
 /* Challenge 14: Change the transition for all elements to 1 second */
 html{
