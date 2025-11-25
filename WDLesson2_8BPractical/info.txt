@@ -2,9 +2,8 @@ Links
       <a href="">Tutorial</a>
       <a href="">Reference</a>
       <a href="">Example</a>
-      <a href="">Exercises</a>
+      <a href="">Exercise</a>
       <a href="">Certification</a>
-
 
 Banner
       <div> w3Schools.com </div>
