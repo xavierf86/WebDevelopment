@@ -4,6 +4,9 @@
       3) Display the results in the appropriate element
 */
 function recArea(){
+      let length1=document.getElementById("length1");
+      let width1=document.getElementById("width1");
+      let answer=parseInt(length1.value)*parseInt(width1.value);
 
 }
 
