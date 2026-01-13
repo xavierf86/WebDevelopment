@@ -6,11 +6,19 @@
 function recArea(){
       let length1=document.getElementById("length1");
       let width1=document.getElementById("width1");
-      let answer=parseInt(length1.value)*parseInt(width1.value);
+      let output= document.getElementById("output")
+      let area=parseFloat(length1.value) * parseFloat(width1.value);
 
+      output.innerHTML=area;
 }
 
 function recPerimeter(){
+      let length2=document.getElementById("length2");
+      let width2=document.getElementById("width2");
+      let output=document.getElementById("output");
+      let perimeter=2*(parseFloat(length2.value) + parseFloat(width2.value));
+
+      output.innerHTML=perimeter;
 
 }
 
