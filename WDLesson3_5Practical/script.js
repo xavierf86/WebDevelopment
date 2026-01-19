@@ -33,7 +33,7 @@ let pi = 3.1415926;
 function cirArea(){
       let r=document.getElementById("radius");
       let output=document.getElementById("output");
-      let area=parseFloat(pi) * (parseFloat(r.value) * 2);
+      let area=parseFloat(pi) * (parseFloat(r.value) * parseFloat(r.value));
 
       output.innerHTML=area;
 }
@@ -41,7 +41,7 @@ function cirArea(){
 function cirPerimeter(){
       let r=document.getElementById("radius2");
       let output=document.getElementById("output");
-      let perimeter= (2 * parseFloat(pi)) * parseFloat(r.value);
+      let perimeter= 2 * parseFloat(pi) * parseFloat(r.value);
 
       output.innerHTML= perimeter;
 }
