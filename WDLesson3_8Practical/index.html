@@ -31,12 +31,15 @@
 
         <!-- Challenge 1:  What information is required for the calculation? -->
         <input type="text" id="r" placeholder="Enter radius">
- 
+        <input type="text" id="h" placeholder="Enter height">
+        <!--There was another text box required, one of the height in order to do the calculation-->
         <!-- Challenge 2: Are the event listener and handler correctly added?-->
-        <input type="button" value="Volume" onlick="cylinder">
-
+        <input type="button" value="Volume" onclick="cylinder()">
+        <!--The event listener is good, but the event handler is wrong, onlick should be onclick, and inside there should be parenthesis next to cylinder-->
+       
         <!-- Challenge 3: Does the id of the text input match the refenence to it in JS?-->
-        <p id="ouput"></p>
+         <!--The text of height was supposed to be h, and the ID was said wrong and the output was spelled as ouput-->
+        <p id="output"></p>
       </div>
     </div>
     <div id="footer" class="container center">
