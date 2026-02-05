@@ -13,7 +13,22 @@ function name(){
 */
 
 /* Challenge 2:  Create the function for Challenge 1 scenario */
+function area(){
+  let length = parseFloat(document.getElementById("length").value);
+  let width = parseFloat(document.getElementById("width").value);
+  let area = length * width
+  let output = document.getElementById("output");
+  let msg = ""
 
+  if(length <= 0||width <= 0){
+    msg = "Inappropriate measurement"
+  }
+  else{
+    msg = area
+  }
+
+  output.innerHTML = msg;
+}
 
 
 /* Challenge 3:  Complete the function for Pets Challenge on pets.html.  
@@ -21,5 +36,12 @@ function name(){
 2) You will need to write HTML as part of the output.  
    For example, output.innerHTML = `<input src="pic.png">` would place the image in the <div>*/
 function pet(){
+  let animal = document.getElementById("animal");
+  let emotion = document.getElementById("emotion");
+  let output = document.getElementById("output");
+  let msg = ""
 
+  if(msg ){
+
+  }
 }
