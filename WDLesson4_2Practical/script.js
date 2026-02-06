@@ -24,7 +24,7 @@ function area(){
     msg = "Inappropriate measurement"
   }
   else{
-    msg = area
+    msg = `Area is ${area}`;
   }
 
   output.innerHTML = msg;
@@ -36,12 +36,35 @@ function area(){
 2) You will need to write HTML as part of the output.  
    For example, output.innerHTML = `<input src="pic.png">` would place the image in the <div>*/
 function pet(){
-  let animal = document.getElementById("animal");
-  let emotion = document.getElementById("emotion");
+  let animal = document.getElementById("animal").value;
+  let emotion = document.getElementById("emotion").value;
   let output = document.getElementById("output");
   let msg = ""
 
-  if(msg ){
-
+  if(animal == "Bear" && emotion == "Sad" ){
+    msg = "sadBear.jpg"
   }
+
+  if(animal == "Bear" && emotion == "Funny" ){
+    msg = "funnyBear.jpg"
+  }
+
+  if(animal == "Dog" && emotion == "Sad" ){
+    msg = "sadDog.jpg"
+  }
+
+  if(animal == "Dog" && emotion == "Funny" ){
+    msg = "funnyDog.jpg"
+  }
+
+  if(animal == "Cat" && emotion == "Sad" ){
+    msg = "sadCat.jpg"
+  }
+
+  if(animal == "Cat" && emotion == "Funny" ){
+    msg = "funnyCat.jpg"
+  }
+
+
+  output.innerHTML = `<img src = "${msg}">`
 }
