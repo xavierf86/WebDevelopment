@@ -6,7 +6,13 @@
 */
 let correct;
 function generateProblem(){
-       
+       let problem = document.getElementById("problem");
+       let num1 = Math.floor(Math.random() * 20 + 1);
+       let num2 = Math.floor(Math.random() * 20 + 1);
+       let correct = num1 + num2;
+       let build = `${num1} + ${num2} =`
+
+       problem.innerHTML = build;
 }
 
 /* Challenge 3: Complete the function checkProblem by ,
@@ -20,7 +26,18 @@ function generateProblem(){
        4) Display msg in the output
 */
 function checkProblem(){
+       let response = parseInt(document.getElementById("response").value);
+       let output = document.getElementById("output");
 
+       build = "";
+
+       if(response == correct){
+              build = "<img src = correct.webp>"
+       }else{
+              build = "<img src = incorrect.avif>"
+       }
+
+       output.innerHTML = build
 }
 
 /* Challenge Bonus: Could you randomize the operations so it is not only addition.  
