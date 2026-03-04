@@ -12,3 +12,20 @@ Year 3: $xxxxxx
 ...
 Year N: $xxxxxx
 */
+function CompInt(){
+    let p = parseFloat(document.getElementById("p").value);
+    let r = parseFloat(document.getElementById("r").value) / 100;
+    let n = parseFloat(document.getElementById("n").value);
+    let t = parseFloat(document.getElementById("t").value);
+
+    let output = document.getElementById("output");
+
+    let build = "";
+    for(let i = 1; i < t; i += 1){
+        let a = p * Math.pow(1 + r/n,n * i)
+
+        build += `Year ${i}: $${a.toFixed(2)}<br>`;
+    }
+
+    output.innerHTML = build;
+}
