@@ -11,8 +11,21 @@
 */
 
 function balance(){
+        
+        let p = parseFloat(document.getElementById("p").value);
+        let r = parseFloat(document.getElementById("r").value) / 100;
+        let t = parseFloat(document.getElementById("t").value);
+        let a = p * Math.pow(1 + r/n,n * t);
+        
+        let output = document.getElementById("output");
 
+        let build = "<table><tr><th>Months</th></tr>"
+        for(let i = 1; i <= 12; i += 1){
 
+                
+        }
+
+        output.innerHTML = build;
 }
 
 /* Challenge Bonus: Allow the user to enter n.  This will require you to modify,
