@@ -17,8 +17,8 @@ let dessert_prices = [10.99, 10.99, 10.99];
 function init(){
   //Each food has its own output container
   let m = document.getElementById("meats");
-  let s = document.getElementById("seafoods");
-  let d = document.getElementById("desserts");
+  let s = document.getElementById("seafood");
+  let d = document.getElementById("dessert");
   let build = ``;
   //Challenge 4:  Build cards for the meats. Place the build in the meat container. 
   for(let i = 0; i < meats.length; i += 1){
