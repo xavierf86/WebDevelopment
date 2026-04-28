@@ -10,15 +10,15 @@ async function init(){
   let build = "";
 
   for(let i = 0; i < data.length; i+=1){
-    let complaint = data[i];
+    let collision = data[i];
     build += `<div class="fitted card">
-                 <h3></h3>
+                 <h3>${collision.contributing_factor_vehicle_1}</h3>
                  <hr>
-                 <p></p>
-                 <p></p>
-                 <p></p>
+                 <p>${collision.borough}</p>
+                 <p>${collision.zip_code}</p>
+                 <p>${collision.on_street_name}</p>
                  <hr>
-                 <p></p>
+                 <p>${collision.crash_date}</p>
                  <hr>
                  <p></p>
               </div>`    
