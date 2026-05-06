@@ -255,5 +255,25 @@ function filterByVehicle(){
 }
 
 function filterByAll(){
-  
+  let output = document.getElementById("output")
+  let result = document.getElementById("result");
+
+  let time = document.getElementById("time").value;
+  let injured = document.getElementById("injured").value;
+  let killed = document.getElementById("killed").value;
+  let zip = document.getElementById("zip").value;
+  let street = document.getElementById("street").value;
+  let cause = document.getElementById("cause").value;
+  let vehicle = document.getElementById("vehicle").value;
+
+  let build = ""
+  let ct = 0;
+
+  for(let i = 0; i < data.length; i+= 1){
+    let collision = data[i]
+
+    if(time = "" || collision.crash_time == time){
+      
+    }
+  }
 }
